@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+	<title>Главная</title>
+	<meta charset="UTF-8">
+	<meta name="format-detection" content="telephone=no">
+	<!-- <style>body{opacity: 0;}</style> -->
+	<link rel="stylesheet" href="css/style.min.css?_v=20231004225450">
+	<link rel="shortcut icon" href="favicon.ico">
+	<!-- <meta name="robots" content="noindex, nofollow"> -->
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;600;700;800;900&display=swap&_v=20231004225450" rel="stylesheet">
+</head>
+
+<body>
+	<div class="wrapper">
+		<header class="header">
+			<div class="header__container">
+			</div>
+		</header>
+		<main class="page">
+			<div class="page__container">
+				<div class="calculator">
+					<div class="calculator__title">how much would you like <span>to borrow?</span></div>
+					<form class="calculator__form" action="" id="calculator">
+						<div class="calculator__row">
+							<div class="calculator__params">
+								<div class="calculator__line">
+									<label for="borrow" class="calculator__label">borrow amount</label>
+									<!-- <input type="range" id="borrow" class="calculator__input calculator__input_range" min="1000" max="20000"> -->
+									<div class="calculator__input_range" id="borrowRange" data-min="1000" data-max="20000"></div>
+									<div class="calculator__steps">
+										<span class="calculator__step">£1000</span><span class="calculator__step">£20k</span>
+									</div>
+									<div class="calculator__value js-borrow-value">£2,000.00</div>
+								</div>
+
+								<div class="calculator__line">
+									<label for="paymentPeriod" class="calculator__label">payment period</label>
+									<!-- <input type="range" id="paymentPeriod" class="calculator__input calculator__input_range" min="1" max="15"> -->
+									<div class="calculator__input_range" id="paymentPeriodRange" data-min="1" data-max="15"></div>
+									<div class="calculator__steps">
+										<span class="calculator__step">1 year</span><span class="calculator__step">15 years</span>
+									</div>
+									<div class="calculator__value js-paymentPeriod">5 years</div>
+								</div>
+
+								<div class="calculator__deposit">
+									<div class="calculator__headline">
+										<span>Deposit Date</span>
+									</div>
+									<div class="calculator__percent js-main-percent">4,95%</div>
+									<div class="calculator__date">
+										<input autocomplete="off" type="text" name="depositDate" id="dateDeposite" class="calculator__input" data-datepicker placeholder="01/12/2023">
+									</div>
+								</div>
+								<div class="calculator__payment">
+									<div class="options__item">
+										<input id="o_1" class="options__input" checked type="radio" value="1" name="paymentMethod">
+										<label for="o_1" class="options__label"><span class="options__text">Deposit Bank transfer</span></label>
+									</div>
+									<div class="options__item">
+										<input id="o_2" class="options__input" type="radio" value="2" name="paymentMethod">
+										<label for="o_2" class="options__label"><span class="options__text">Cash</span></label>
+									</div>
+								</div>
+							</div>
+							<div class="calculator__result">
+								<div class="calculator__monthly">
+									<div class="calculator__subtitle">monthly payment</div>
+									<div class="calculator__value js-monthly-payment">£80,20.00</div>
+									<div class="calculator__caption">fees include</div>
+								</div>
+								<div class="calculator__res-row">
+									<div class="calculator__res-block">
+										<div class="calculator__res-name">borrowing</div>
+										<div class="calculator__res-value js-borrow">£2,000.00</div>
+									</div>
+									<div class="calculator__res-block calculator__res-block_green">
+										<div class="calculator__res-name">to repay</div>
+										<div class="calculator__res-value js-repay">£3,500.00</div>
+									</div>
+								</div>
+								<button type="submit" class="calculator__button">send form</button>
+							</div>
+						</div>
+					</form>
+				</div>
+			</div>
+		</main>
+
+		<footer class="footer">
+			<div class="footer__container">
+			</div>
+		</footer>
+	</div>
+	<script src="js/app.min.js?_v=20231004225450"></script>
+</body>
+
+</html>
